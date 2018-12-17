@@ -35,7 +35,7 @@
             duration = 50
             break;
            case 'fast':
-            duration = 2
+            duration = 1
             break;
         }
     })
