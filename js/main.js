@@ -2,7 +2,7 @@
     var music = document.getElementById('bgmusic')
     var musicIcon = document.getElementById('musicIcon')
     var iconWrapper = document.getElementById('iconWrapper')
-    music.volume = 0.2
+    music.volume = 0.1
     music.loop = true
     musicIcon.onclick = function(){
         if(iconWrapper.className === 'stop'){
@@ -120,17 +120,17 @@
         background:#dddddd;
         position:absolute;
         top:94px;
-     }
+    }
     .leftEye{
         right:50%;
         margin-right:21px;
         border-radius:33px 33px 30px 25px/40px 38px 40px 30px;
-     } 
+    } 
     .rightEye{
         left:50%;
         margin-left:21px;
         border-radius:33px 33px 25px 30px/38px 40px 30px 40px; 
-     }
+    }
     /*
     *接着补上亮亮的瞳孔
     */
@@ -324,6 +324,7 @@
         border-left:15px solid #3f3847;
         transform:rotate(-85deg);
         animation: leftear 5s infinite;
+        animation-delay: 2s;
     }
     .rightEar{
         left:50%;
