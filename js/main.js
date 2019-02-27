@@ -1,4 +1,4 @@
-!function(){
+{
     var music = document.getElementById('bgmusic')
     var musicIcon = document.getElementById('musicIcon')
     var iconWrapper = document.getElementById('iconWrapper')
@@ -22,6 +22,7 @@
         this.title = '暂停音乐'
       }
     }
+ 
     var duration = 50
     $('.actions').on('click','button',function(e){
         let $button = $(e.currentTarget)
@@ -39,14 +40,17 @@
             break;
         }
     })
+
     function writeCode(code,fn){
         let container = document.querySelector('#code')
         let styleTag = document.querySelector('#styleTag')
+        
         let n = 0
         let id
         id = setTimeout(function run(){
             n += 1
-            container.innerHTML = code.substring(0,n)
+            container.innerHTML = Prism.highlight(code.substring(0,n), Prism.languages.css)
+            // container.innerHTML = code.substring(0,n)
             styleTag.innerHTML = code.substring(0,n)
             container.scrollTop = container.scrollHeight //让它滚动
             if(n < code.length){
@@ -354,7 +358,8 @@
     */
     `
     writeCode(code)
-}.call()
+}
+
 
 
 

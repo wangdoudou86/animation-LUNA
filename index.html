@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animation LUNA</title>
+    <link rel="stylesheet" href="./vendor/prism.css">
     <link rel="stylesheet" href="./css/style.css">
     <style id="styleTag"></style>
 </head>
 <body>
-    <div class="codeWrapper">
-       <pre id="code"></pre>
-    </div>
-
-    <div class="previewWrapper">
-        <div class="preview">
-                <div class="wrapper">
-                        <div class="ears leftEar"></div>
-                        <div class="ears rightEar"></div>
-                        <div class="upperFace">
-                          <div class="moon"></div>
-                        </div>
-                        <div class="belowFace"></div>
-                        <div class="eyes leftEye">
-                          <div class="leftMeye">
-                            <div class="leftSmallEye"></div>
-                          </div>
-                        </div>
-                        <div class="eyes rightEye">
-                          <div class="rightMeye">
-                            <div class="rightSmallEye"></div>
-                          </div>
-                        </div>
-                        <div class="nose"></div>
-                        <div class="mouth"></div>
-                        <div class="whisker lWhisker"></div>
-                        <div class="whisker rWhisker"></div>                    
+  
+<div class="previewWrapper">
+    <div class="preview">
+     
+            <div class="wrapper">
+                    <div class="ears leftEar"></div>
+                    <div class="ears rightEar"></div>
+                    <div class="upperFace">
+                      <div class="moon"></div>
+                    </div>
+                    <div class="belowFace"></div>
+                    <div class="eyes leftEye">
+                      <div class="leftMeye">
+                        <div class="leftSmallEye"></div>
                       </div>
-        </div>
+                    </div>
+                    <div class="eyes rightEye">
+                      <div class="rightMeye">
+                        <div class="rightSmallEye"></div>
+                      </div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                    <div class="whisker lWhisker"></div>
+                    <div class="whisker rWhisker"></div>                    
+                  </div>
     </div>
+</div>
+<div class="codeWrapper">
+    <pre id="code"></pre>
+  </div>
 
     <div class="actions">
       <button data-speed="slow">慢速</button>  
@@ -49,6 +51,7 @@
       <audio id="bgmusic" src="./media/luna.mp3" ></audio> 
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./vendor/prism.js"></script>    
     <script src="./js/main.js"></script>
 </body>
 </html>

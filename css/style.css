@@ -8,7 +8,8 @@
 *{
    transition: all 0.3s;
 }
-body{
+
+/* body{
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -23,6 +24,41 @@ body{
 }
 #code{
     height: 100vh;
+    overflow: auto;
+}
+.preview{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} */
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.previewWrapper{
+    height:60%;
+    background: #bcd6d3;
+}
+.preview{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    height:245px;
+    width:100%;
+    position: relative;
+  }
+  .codeWrapper{
+    height:40%;
+}
+  #code{
+    height:100%;
     overflow: auto;
 }
 .actions{
@@ -69,15 +105,3 @@ body{
     50%{transform:rotate(180deg)}
     100%{transform:rotate(360deg)}
 }
-.preview{
-    width:100%;
-    height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.wrapper{
-    height:245px;
-    width:100%;
-    position: relative;
-  }
